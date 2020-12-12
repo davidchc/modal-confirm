@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemple</title>
+    <link rel="stylesheet" href="../modal-confirm.css">
+    <style>
+        body{ margin:0; padding:0}
+
+        main{
+            text-align: center;
+        }
+
+        h1{
+            padding:20px;
+            background: #000;
+            color:#FFF;
+            margin:0 0 50px
+        }
+
+        .confirm{
+            display: inline-block;
+            padding:10px;
+            border:#000 1px solid ;
+            color:#000;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Exemplo de utilização</h1>
+        <a href="#" class="confirm">Toggle</a>
+
+    </main>
+    
+    <script src="../modal-confirm.js"></script>
+
+
+    
+    <script>
+        document.querySelector('.confirm').addEventListener('click', (e)=>{
+            e.preventDefault();
+            confirmModal({
+                        message: 'Você deseja realizar essa ação?',
+                        ok: function(){
+                                alert('OK');
+                        },
+                        cancel: function(){
+                            alert('Cancel');
+                        }
+                    });
+        });
+    </script>
+</body>
+</html>

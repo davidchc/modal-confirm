@@ -1,0 +1,44 @@
+.confirm-modal-mask{
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.8);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999999999;
+}
+
+.confirm-modal-mask *{
+    box-sizing: border-box;
+}
+  
+.confirm-modal{
+   width:300px;
+   background: #fff;
+   height:100px;
+   box-shadow:  0 0 1px #fff;
+}
+
+.confirm-body{
+    padding: 10px;
+    text-align: center;
+    font-size: 15px;
+    background: #F00;
+    margin: 0 0 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+}
+ 
+.confirm-action{
+   text-align:center;
+}
+
+.confirm-action button{
+    border:1px solid #ccc;
+    padding:10px;
+}
